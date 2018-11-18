@@ -1,0 +1,35 @@
+<div class="masonry">
+  <ng-template ngFor let-item [ngForOf]="profilesArray" let-i="index">
+    <div class="profile-box">
+    <img class="item" [src]="item.img">
+    <div class="content">  
+      <h1>{{ item.name }}</h1>
+      <p>{{ item.story }}</p>
+    </div>
+    <progress class="progress is-small is-primary" value="15" max="100">15%</progress>
+    <div class="content">$400 raised of $5,000</div>
+    <button class="button is-primary title is-6" (click)="sendDonation(i)">Send U.CASH</button>
+  </div>
+  </ng-template>
+</div>
+
+<!-- <ng-template ngFor let-item [ngForOf]="profilesArray" let-i="index">
+<div class="card">
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img src="{{ item.img }}">
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-4">{{ item.name }}</p>
+        </div>
+      </div>
+  
+      <div class="content">
+        {{ item.story }}
+      </div>
+    </div>
+  </div>
+</ng-template> -->
