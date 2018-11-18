@@ -31,4 +31,12 @@ contract Verify is Ownable {
         verifiedHomelessArr.push(_homelessAddress);
         emit homelessRegistered(_homelessAddress);
     }
+    
+    function getVerifiedCharityArr() public view returns(address[]){
+        return verifiedCharityArr;
+    }
+    
+    function getVerifiedHomelessArr() public view returns(address[]){
+        return verifiedHomelessArr;
+    }
 }
