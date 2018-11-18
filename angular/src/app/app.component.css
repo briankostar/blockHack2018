@@ -1,0 +1,48 @@
+#bg-img {
+  background-image: url("https://wonderingfair.files.wordpress.com/2016/06/happy-homeless-man.jpg");
+  background-size: cover;
+  width: auto;
+  min-height: 550px;
+}
+
+#info-block {
+  /* height: 250px; */
+  background-color: #110c11;
+  margin-top: -10px;
+  padding:2em;
+}
+
+.text {
+  /* margin-top: 20px; */
+  font-size: 24px;
+  color: white;
+  padding: 30px;
+}
+
+#homelessName {
+  color: red;
+  font-size: 50px;
+  margin-top: -130px;
+  padding-left: 20px;
+}
+
+.footer {
+  background-color: hsl(0, 0%, 14%);
+  padding: 3rem 1.5rem 3.5rem
+}
+
+.footer strong {
+  color: white;
+}
+
+.footer .icon {
+  color: white;
+}
+
+#ucare {
+  height: 250px;
+  width: auto;
+  left: 15em;
+  top: 6em;
+  position: relative;
+}

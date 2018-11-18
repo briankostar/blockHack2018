@@ -1,0 +1,68 @@
+.masonry { /* Masonry container */
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.container .content {
+  position: relative; /* Position the background text */
+  /* bottom: 0; At the bottom. Use top:0 to append it to the top */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+/* The Masonry Container */
+.masonry {
+  margin: 2.5em 4em;
+  /* max-width: 768px; */
+  column-gap: 1.5em;
+}
+
+/* The Masonry Brick */
+.item {
+  background: #fff;
+  padding: .25em;
+  margin: 0 0 0.5em;
+  /* background-color: #fff; */
+  /* color: #4a4a4a; */
+}
+
+.profile-box {
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+.progress:not(:last-child) {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
