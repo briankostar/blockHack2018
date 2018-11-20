@@ -39,9 +39,9 @@ export class ProfileComponent implements OnInit {
   }
 
   private async sendDonation() {
-    let fromAddress = '0xC3b290bbF6Bdf0a73daE6dED2b737007f7E975f8';
-    let toAddress = '0x828007A18e03562738D71d323B9698EC292EdEDB';
-    let done = await ContractInstance.transfer(toAddress, ethers.utils.bigNumberify(10000000000));
+    let fromAddress = '0xC9970f0d5cb99A97b563BFE2A176673Cdf9d74c2';
+    let toAddress = '0x03B122cEac0430aeb56Caaa9D879C19c70f8AcdE';
+    let done = await ContractInstance.transfer(toAddress, ethers.utils.bigNumberify(1000000000000));
     console.log('Transaction Finished')
   }
 }
